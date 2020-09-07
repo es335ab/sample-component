@@ -8,7 +8,7 @@
 <script lang="ts">
 import Vue from "vue";
 import HelloWorld from "./components/HelloWorld.vue";
-import { Message } from "./types/message";
+import { Message } from "./types";
 
 export default Vue.extend({
   name: "App",

@@ -6,7 +6,7 @@
 
 <script lang="ts">
 import Vue, { PropType } from "vue";
-import { Message } from "../types/message";
+import { Message } from "../types";
 
 export default Vue.extend({
   name: "HelloWorld",
