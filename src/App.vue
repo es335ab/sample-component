@@ -1,16 +1,25 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+    <HelloWorld :message="message" />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
 import HelloWorld from "./components/HelloWorld.vue";
+import { Message } from "./types/message";
 
 export default Vue.extend({
   name: "App",
+  data() {
+    return {
+      message: {
+        id: 0,
+        text: "こんにちわ"
+      } as Message
+    };
+  },
   components: {
     HelloWorld
   }
