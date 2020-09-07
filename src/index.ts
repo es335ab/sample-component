@@ -1,4 +1,5 @@
 import HelloWorld from "./components/HelloWorld.vue"
+import { Message } from "./types";
 
 // function plugin (Vue) {
 //   Vue.component("hello-world", HelloWorld)
@@ -11,5 +12,7 @@ import HelloWorld from "./components/HelloWorld.vue"
 
 // export default plugin
 
-export * from "./components/HelloWorld.vue"
-export * from "./types"
+export {
+  HelloWorld,
+  Message
+}
